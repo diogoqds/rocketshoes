@@ -104,7 +104,7 @@ Cart.propTypes = {
   ),
   removeFromCart: PropTypes.func.isRequired,
   updateAmount: PropTypes.func.isRequired,
-  cartTotalPrice: PropTypes.number,
+  cartTotalPrice: PropTypes.string,
 };
 
 const mapStateToProps = state => ({
