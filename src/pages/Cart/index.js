@@ -25,7 +25,7 @@ function Cart({ cart, removeFromCart, updateAmountRequest, cartTotalPrice }) {
       <ProductTable>
         <thead>
           <tr>
-            <th />
+            <th> </th>
             <th>PRODUTO</th>
             <th>QTD</th>
             <th>SUBTOTAL</th>
