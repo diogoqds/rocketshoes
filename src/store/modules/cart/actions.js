@@ -1,13 +1,13 @@
-export function removeFromCart(id) {
+export function addToCart(product) {
   return {
-    type: 'REMOVE_FROM_CART',
-    id,
+    type: '@cart/ADD',
+    product,
   };
 }
 
-export function addToCart(product) {
+export function removeFromCart(id) {
   return {
-    type: 'ADD_TO_CART',
-    product,
+    type: '@cart/REMOVE',
+    id,
   };
 }
