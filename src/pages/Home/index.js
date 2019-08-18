@@ -25,9 +25,9 @@ class Home extends Component {
     this.setState({ products });
   }
 
-  handleAddProductToCart = product => {
-    const { addToCart } = this.props;
-    addToCart(product);
+  handleAddProductToCart = id => {
+    const { addToCartRequest } = this.props;
+    addToCartRequest(id);
   };
 
   render() {
@@ -43,7 +43,7 @@ class Home extends Component {
 
             <button
               type="button"
-              onClick={() => this.handleAddProductToCart(product)}
+              onClick={() => this.handleAddProductToCart(product.id)}
             >
               <div>
                 <MdAddShoppingCart size={20} color="#fff" />
@@ -60,7 +60,7 @@ class Home extends Component {
 }
 
 Home.propTypes = {
-  addToCart: PropTypes.func.isRequired,
+  addToCartRequest: PropTypes.func.isRequired,
   amount: PropTypes.shape({}).isRequired,
 };
 
